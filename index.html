@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <base target="_blank">
+</head>
+<body>
+  <div class="header">
+
+    <div class="head-info">
+      <img src="images/logo.svg" alt="logo-image">
+      
+      <h1>We are launching <span>soon!</span></h1>
+      
+      <h3>Subscribe and get notified</h3>
+    </div>
+    <div class="subscribe-form">
+      <form action="/" method="POST">
+        <input type="email" placeholder="Your email address...">
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+
+  </div>
+  <div class="middle-dashboard">
+    <img src="images/illustration-dashboard.png" alt="middle-dashboard-image">
+  </div>
+  <div class="footer">
+    <div class="social-logos">
+      <a href="#" class="facebook-icon">
+        <i class='bx bxl-facebook'></i>
+      </a>
+      <a href="#" class="twitter-icon">
+        <i class='bx bxl-twitter'></i>
+      </a>
+      <a href="#" class="instagram-icon">
+        <i class='bx bxl-instagram'></i>
+      </a>
+    </div>
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ddaniel27">ddaniel27</a>.
+    </p>
+  </div>
+
+  <script>
+    const form = document.querySelector('.subscribe-form')
+    form.addEventListener('submit', (e) => {
+      e.preventDefault()
+    })
+  </script>
+</body>
+</html>
